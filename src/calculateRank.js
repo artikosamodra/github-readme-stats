@@ -42,7 +42,7 @@ const calculateRank = ({
   totalRepos,
   totalCommits,
   contributions,
-  followers,
+  //followers,
   prs,
   issues,
   stargazers,
@@ -52,7 +52,7 @@ const calculateRank = ({
   const ISSUES_OFFSET = 1;
   const STARS_OFFSET = 0.75;
   const PRS_OFFSET = 0.5;
-  const FOLLOWERS_OFFSET = 0.45;
+  //const FOLLOWERS_OFFSET = 0.45;
   const REPO_OFFSET = 1;
 
   const ALL_OFFSETS =
@@ -60,7 +60,7 @@ const calculateRank = ({
     ISSUES_OFFSET +
     STARS_OFFSET +
     PRS_OFFSET +
-    FOLLOWERS_OFFSET +
+    //FOLLOWERS_OFFSET +
     REPO_OFFSET;
 
   const RANK_S_VALUE = 1;
@@ -83,7 +83,7 @@ const calculateRank = ({
     issues * ISSUES_OFFSET +
     stargazers * STARS_OFFSET +
     prs * PRS_OFFSET +
-    followers * FOLLOWERS_OFFSET +
+    //followers * FOLLOWERS_OFFSET +
     totalRepos * REPO_OFFSET
   ) / 100;
 
